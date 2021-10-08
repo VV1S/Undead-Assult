@@ -180,6 +180,7 @@ GameObject:
   - component: {fileID: 5400000}
   - component: {fileID: 13600000}
   - component: {fileID: 11400004}
+  - component: {fileID: 1957341352}
   m_Layer: 0
   m_Name: RigidBodyFPSController
   m_TagString: Untagged
@@ -301,6 +302,19 @@ MonoBehaviour:
     slowDownRate: 20
     airControl: 0
     shellOffset: 0
+--- !u!114 &1957341352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de0d65142f27544439ba24f225f0fce1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: 100
 --- !u!1 &1360537146502685086
 GameObject:
   m_ObjectHideFlags: 0
@@ -332,6 +346,23 @@ Transform:
   m_Father: {fileID: 400000}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1017181642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2595129411005999526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed1f427e3aaa0ac4b9d4dbf17b8ed0e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FPCamera: {fileID: 2000000}
+  range: 100
+  damage: 10
+  muzzleFlash: {fileID: 6036701639583613809}
+  hitEffect: {fileID: 225864006825003383, guid: 4eb8c66f4f826714d93a858382479930, type: 3}
 --- !u!1001 &2595129411006099206
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -341,7 +372,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: 803145e5d0e3e3e4781b954f4d416c91, type: 3}
       propertyPath: m_Name
-      value: Weapon-Wand-01
+      value: Wand
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 803145e5d0e3e3e4781b954f4d416c91, type: 3}
       propertyPath: m_RootOrder
@@ -401,6 +432,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 803145e5d0e3e3e4781b954f4d416c91, type: 3}
+--- !u!1 &2595129411005999526 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 803145e5d0e3e3e4781b954f4d416c91, type: 3}
+  m_PrefabInstance: {fileID: 2595129411006099206}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2595129411005707654 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 803145e5d0e3e3e4781b954f4d416c91, type: 3}
@@ -475,3 +511,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ae90da90d7b6973488e644723589d859, type: 3}
+--- !u!198 &6036701639583613809 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 9047803494697453041, guid: ae90da90d7b6973488e644723589d859, type: 3}
+  m_PrefabInstance: {fileID: 3339117303871342208}
+  m_PrefabAsset: {fileID: 0}
