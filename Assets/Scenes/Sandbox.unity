@@ -355,6 +355,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1017181642, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
+      propertyPath: ammo
+      value: 
+      objectReference: {fileID: 1666497104}
+    - target: {fileID: 1017181642, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
+      propertyPath: ammoSlot
+      value: 
+      objectReference: {fileID: 1666497104}
     - target: {fileID: 1145266154700896934, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
       propertyPath: gameOverCanvas
       value: 
@@ -5293,6 +5301,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 66a13889798137c498eae4b3acdafe19, type: 3}
   m_PrefabInstance: {fileID: 1665499403}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1666497097 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100006, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
+  m_PrefabInstance: {fileID: 114819013}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1666497104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1666497097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fe314d0506441e4eaaccc7e6086c242, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ammoAmount: 10
 --- !u!1001 &1676481869
 PrefabInstance:
   m_ObjectHideFlags: 0
