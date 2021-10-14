@@ -11,10 +11,11 @@ public class EnemyHealth : MonoBehaviour
     public void TakeDamage(float damage)
     {
         hitPoints -= damage;
+        BroadcastMessage("OnDamageTaken");
         if (hitPoints <=0)
         {
             Destroy(gameObject);
         }
-    }
+    } 
 
 }
