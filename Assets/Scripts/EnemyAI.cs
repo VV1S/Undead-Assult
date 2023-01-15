@@ -14,13 +14,13 @@ public class EnemyAI : MonoBehaviour
     float distanceToTarget = Mathf.Infinity;
     bool isProvoked = false;
     EnemyHealth health;
-    CapsuleCollider collider;
+    CapsuleCollider collision;
 
     void Start()
     {
         navMeshAgent = GetComponent<NavMeshAgent>();
         health = GetComponent<EnemyHealth>();
-        collider = GetComponent<CapsuleCollider>();
+        collision = GetComponent<CapsuleCollider>();
     }
 
     void Update()
@@ -29,7 +29,7 @@ public class EnemyAI : MonoBehaviour
         {
             enabled = false;
             navMeshAgent.enabled = false;
-            collider.enabled = false;
+            collision.enabled = false;
         }
         else
         {
